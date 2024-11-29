@@ -1,0 +1,82 @@
+.clock {
+  max-width: 700px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.setters {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: space-around;
+}
+
+button {
+  margin: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2222aa;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #4444cc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h4 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+span {
+  font-size: 24px;
+}
+
+.display {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.5s ease-in-out;
+}
+
+.time-warning {
+  color: orange;
+}
+
+.time-critical {
+  color: red;
+}
+
+@media (max-width: 600px) {
+  .clock {
+    padding: 20px;
+    height: auto;
+  }
+
+  .setters {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  span {
+    font-size: 18px;
+  }
+}
